@@ -1,0 +1,163 @@
+@font-face
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 400
+  src: url('../fonts/prata-v18-cyrillic_latin-regular.woff2'), url('../fonts/prata-v18-cyrillic_latin-regular.woff')
+
+@font-face
+  font-family: 'Roboto'
+  font-style: bold
+  font-weight: 700
+  src: url('../fonts/roboto-v30-latin_cyrillic-700.woff2'), url('../fonts/roboto-v30-latin_cyrillic-700.woff')
+
+@font-face
+  font-family: 'Apex New'
+  font-style: bold
+  font-weight: 700
+  src: url('../fonts/apex-new-bold-webfont.woff2'), url('../fonts/apex-new-bold-webfont.woff')
+
+@import "_normalize.scss"
+@import "_reset.scss"
+
+*
+  box-sizing: border-box
+
+html
+  font-family: 'Roboto', sans-serif
+
+a
+  text-decoration: none
+
+.container
+  margin: 0 auto
+  padding: 0 15px
+  max-width: 1200px
+  @media (max-width:767px)
+    max-width: 540px
+  @media (max-width:575px)
+    max-width: 100%
+
+.btn
+  padding: 12px 30px
+  width: 250px
+  border: 1px solid #333333
+  border-radius: 10px
+  color: #333333
+  background: none
+  text-transform: uppercase
+  transition: all .1s ease-out
+  &:hover
+    opacity: 0.85
+    cursor: pointer
+    transform: scale(1.025)
+
+.search-git
+  padding: 40px 0 60px 0
+  @media (max-width:767px)
+    padding: 20px 0 40px 0
+  &__search
+    margin-bottom: 70px
+    @media (max-width:767px)
+      margin-bottom: 35px
+
+.search
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__heading
+    margin-bottom: 50px
+    font-family: 'Apex New', sans-serif
+    font-size: 36px
+    line-height: 120%
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    @media (max-width:767px)
+      margin-bottom: 30px
+    @media (max-width:575px)
+      font-size: 26px
+  &__input-box
+    margin-bottom: 30px
+    @media (max-width:767px)
+      margin-bottom: 20px
+  &__input
+    width: 738px
+    height: 60px
+    border: none
+    outline: 1px solid #333333
+    border-radius: 10px
+    font-size: 24px
+    line-height: 1
+    color: #333333
+    text-align: center
+    @media (max-width:767px)
+      width: 500px
+    @media (max-width:575px)
+      width: 290px
+      height: 50px
+    &:focus
+      border: none
+      outline: 2px solid #9BD5E3
+  &__btn
+    background-color: #333333
+    span
+      display: flex
+      justify-content: center
+      font-weight: 400
+      font-size: 32px
+      line-height: 120%
+      color: white
+      transform: translateY(5px)
+
+.repositories
+  margin: 0 auto
+  max-width: 738px
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 20px
+    @media (max-width:767px)
+      justify-content: center
+      margin-bottom: 10px
+    @media (max-width:575px)
+      text-align: center
+  &__item
+    margin-bottom: 20px
+    padding-bottom: 10px
+    border-bottom: 1px solid #DCDADA
+  &__heading
+    margin-bottom: 5px
+    font-weight: 700
+    font-size: 24px
+    line-height: 28px
+  &__link-heading
+    color: #333333
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+  &__info
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: #333333
+  &__field
+    margin-bottom: 5px
+    &:last-child
+      margin-bottom: 0
+  &__link-autor
+    font-weight: 700
+    color: #333333
+    &:hover
+      text-decoration: underline
+  &__btn-box
+    text-align: center
+  &__btn
+    font-weight: 400
+    font-size: 20px
