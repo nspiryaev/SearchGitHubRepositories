@@ -100,7 +100,6 @@ a
       width: 500px
     @media (max-width:575px)
       width: 290px
-      height: 50px
     &:focus
       border: none
       outline: 2px solid #9BD5E3
@@ -126,12 +125,14 @@ a
     @media (max-width:767px)
       justify-content: center
       margin-bottom: 10px
-    @media (max-width:575px)
-      text-align: center
   &__item
+    flex: 0 0 300px
     margin-bottom: 20px
     padding-bottom: 10px
+    width: 300px
     border-bottom: 1px solid #DCDADA
+    @media (max-width:767px)
+      flex: 0 1 100%
   &__heading
     margin-bottom: 5px
     font-weight: 700
@@ -161,3 +162,25 @@ a
   &__btn
     font-weight: 400
     font-size: 20px
+
+.error
+  input
+    outline: 2px solid #9F0202
+
+.error-label
+  display: block
+  padding-top: 20px
+  font-size: 16px
+  line-height: 130%
+  text-align: center
+  color: #9F0202
+
+.not-found
+  flex: 0 1 100%
+  border-bottom: none
+  &__text
+    font-weight: 400
+    font-size: 24px
+    line-height: 28px
+    text-align: center
+    color: #333333

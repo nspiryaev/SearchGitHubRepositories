@@ -498,7 +498,6 @@ a {
 @media (max-width: 575px) {
   .search__input {
     width: 290px;
-    height: 50px;
   }
 }
 .search__input:focus {
@@ -534,15 +533,17 @@ a {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 575px) {
-  .repositories__list {
-    text-align: center;
-  }
-}
 .repositories__item {
+  flex: 0 0 300px;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  width: 300px;
   border-bottom: 1px solid #DCDADA;
+}
+@media (max-width: 767px) {
+  .repositories__item {
+    flex: 0 1 100%;
+  }
 }
 .repositories__heading {
   margin-bottom: 5px;
@@ -582,4 +583,29 @@ a {
 .repositories__btn {
   font-weight: 400;
   font-size: 20px;
+}
+
+.error input {
+  outline: 2px solid #9F0202;
+}
+
+.error-label {
+  display: block;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #9F0202;
+}
+
+.not-found {
+  flex: 0 1 100%;
+  border-bottom: none;
+}
+.not-found__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #333333;
 }/*# sourceMappingURL=style.css.map */
