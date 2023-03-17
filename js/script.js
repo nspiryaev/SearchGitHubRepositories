@@ -116,29 +116,29 @@ function addRepository(data, index) {
   linkHeading.textContent = data.items[index].name;
   h2.append(linkHeading);
 
-  const divFieldAutor = document.createElement('div'),
+  const divFieldAuthor = document.createElement('div'),
     divFieldDescription = document.createElement('div'),
     divFieldStars = document.createElement('div'),
     divFieldLanguage = document.createElement('div');
-  divFieldAutor.classList.add('repositories__field');
+  divFieldAuthor.classList.add('repositories__field');
   divFieldDescription.classList.add('repositories__field');
   divFieldStars.classList.add('repositories__field');
   divFieldLanguage.classList.add('repositories__field');
-  divFieldAutor.textContent = 'Автор - ';
+  divFieldAuthor.textContent = 'Автор - ';
   divFieldDescription.textContent = 'Описание - ';
   divFieldStars.textContent = 'Количество звезд - ';
   divFieldLanguage.textContent = 'Язык - ';
-  divInfo.append(divFieldAutor);
+  divInfo.append(divFieldAuthor);
   divInfo.append(divFieldDescription);
   divInfo.append(divFieldStars);
   divInfo.append(divFieldLanguage);
 
-  const linkAutor = document.createElement('a');
-  linkAutor.classList.add('repositories__link-autor');
-  linkAutor.setAttribute('target', '_blank');
-  linkAutor.setAttribute('href', data.items[index].owner.html_url);
-  linkAutor.textContent = data.items[index].owner.login;
-  divFieldAutor.append(linkAutor);
+  const linkAuthor = document.createElement('a');
+  linkAuthor.classList.add('repositories__link-author');
+  linkAuthor.setAttribute('target', '_blank');
+  linkAuthor.setAttribute('href', data.items[index].owner.html_url);
+  linkAuthor.textContent = data.items[index].owner.login;
+  divFieldAuthor.append(linkAuthor);
 
   const spanDescription = document.createElement('span'),
     spanStars = document.createElement('span'),

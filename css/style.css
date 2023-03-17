@@ -425,6 +425,7 @@ a {
 
 .search-git {
   padding: 40px 0 60px 0;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .search-git {
@@ -570,11 +571,11 @@ a {
 .repositories__field:last-child {
   margin-bottom: 0;
 }
-.repositories__link-autor {
+.repositories__link-author {
   font-weight: 700;
   color: #333333;
 }
-.repositories__link-autor:hover {
+.repositories__link-author:hover {
   text-decoration: underline;
 }
 .repositories__btn-box {
